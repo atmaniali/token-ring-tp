@@ -61,7 +61,7 @@ class Part_In(threading.Thread) :
 
 
     def run(self):
-        print("## YOU ARE THE SERVER OF NODE ##")
+        # print("## YOU ARE THE SERVER OF NODE ##")
         # dans la methode run (), socket accept une seul demande de connexion
         self.connexion, self.add = self.ss.accept()      
 

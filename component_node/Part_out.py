@@ -19,7 +19,7 @@ class Part_Out(threading.Thread):
 
 
     def run(self):
-        print("## YOU ARE THE CLIENT OF NODE ##")
+        # print("## YOU ARE THE CLIENT OF NODE ##")
         try :
             # se connecter au socket Sd_In du noud suivant
             # avec la port "self.port_next_Neighbor"
@@ -34,5 +34,5 @@ class Part_Out(threading.Thread):
             self.s.send(b"TOKEN")   
             self.__flag.clear()
 
-    def resume(self)    :\
+    def resume(self)  :
         self.__flag.set()
